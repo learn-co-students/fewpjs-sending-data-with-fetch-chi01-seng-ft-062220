@@ -1,5 +1,6 @@
 function submitData(name, email){
   let configurationObject = {
+    //makes a POST request to /user with a name and email
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -15,9 +16,13 @@ function submitData(name, email){
   .then(function(response){
     return response.json()
   })
+  // handles the POST request response, 
+  // retrieves the new id value and appends it to the DOM
   .then(function(object) {
     document.body.innerHTML = object["id"]
   })
+  // handles a failed POST request using catch, 
+  // appends the error message to the DOM
   .catch(function(error) {
     document.body.innerHTML = error.message
   });
