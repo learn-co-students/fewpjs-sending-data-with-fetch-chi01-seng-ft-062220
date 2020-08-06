@@ -1,3 +1,4 @@
+//Link: https://learn.co/tracks/web-development-immersive-3-1-module-three/front-end-web-programming/communication-with-the-server/sending-data-with-fetch-lab
 function submitData(name, email){
   let configurationObject = {
     //makes a POST request to /user with a name and email
