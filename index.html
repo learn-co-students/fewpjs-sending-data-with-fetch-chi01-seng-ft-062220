@@ -9,7 +9,44 @@
   </head>
 
   <body>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
+
+    <form id="dog-form">
+      <label> Dog Name: <input type="text" name="dogName" id="dogName" /></label><br />
+      <label> Dog Breed: <input type="text" name="dogBreed" id="dogBreed" /></label><br />
+      <input type="submit" name="submit" id="submit" value="Submit" />
+    </form> 
+
+    <form id="user-form">
+      <label> Username: <input type="text" name="userName" id="userName" /></label><br />
+      <label> Useremail: <input type="text" name="email" id="email" /></label><br />
+      <input type="submit" name="submit" id="submit" value="Submit" />
+    </form> 
+
+    <div id="dog-container">
+      <h3>Dogs</h3>
+      <ul id="dog-list">
+
+      </ul>
+    </div>
+    <div id="cat-container">
+      <h3>Cats</h3>
+      <ul id="cat-list">
+        
+      </ul>
+    </div>
+    <div id="user-container">
+      <h3>User</h3>
+      <ul id="user-list">
+        
+      </ul>
+    </div>
+    <div id="robots-container">
+      <h3>Robots</h3>
+      <ul id="robots-list">
+        
+      </ul>
+    </div>
   </body>
 
 </html>
